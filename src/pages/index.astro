@@ -1,11 +1,105 @@
 ---
 import '../styles/global.css';
+import { Ruler, Layout, UserCheck } from 'lucide-react';
 ---
 
-	
-<h1 class="text-3xl font-bold underline text-green-400">
-	Hello world!
-</h1>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1 Speedway - Viviendo la Velocidad Al Límite</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  </head>
+  <body class="bg-black text-white">
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+      <img src="/background1.jpg" alt="Background Hero" class="absolute inset-0 w-full h-full object-cover opacity-70">
+      <div class="relative z-10 flex flex-col items-center justify-center h-full space-y-8">
+        <img src="/P1logo.png" alt="P1 Logo" class="w-64">
+        <h1 class="text-6xl font-bold">Viviendo La Velocidad Al Límite</h1>
+      </div>
+    </section>
+
+    <!-- Competencias, Alquiler de Karts, Empresariales -->
+    <section class="py-16 bg-black">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <h2 class="text-4xl font-bold text-red-600">01</h2>
+          <p class="mt-2 text-xl">Competencias</p>
+          <p>Eventos de pista abiertos para disfrute de todos.</p>
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold text-red-600">02</h2>
+          <p class="mt-2 text-xl">Alquiler de Karts</p>
+          <p>Disfruta de nuestros karts rentados para una experiencia inolvidable.</p>
+        </div>
+        <div>
+          <h2 class="text-4xl font-bold text-red-600">03</h2>
+          <p class="mt-2 text-xl">Empresariales</p>
+          <p>Organiza tus eventos privados con nosotros.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- P1 Speedway Section -->
+    <section class="py-16 bg-black text-center">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-5xl font-bold">P1 Speedway</h2>
+        <p class="mt-4">P1 Speedway es un espacio dedicado a ofrecer una experiencia única para los amantes de la velocidad.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          <img src="/kart1.jpg" alt="Kart 1" class="w-full h-auto">
+          <img src="/kart2.jpg" alt="Kart 2" class="w-full h-auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- Características de la Pista -->
+    <section class="py-16 bg-black">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <Ruler class="w-12 h-12 text-red-600 mx-auto" />
+          <h3 class="text-xl font-bold mt-4">Dimensiones Totales</h3>
+          <p>1,000 metros de pista profesional.</p>
+        </div>
+        <div>
+          <Layout class="w-12 h-12 text-red-600 mx-auto" />
+          <h3 class="text-xl font-bold mt-4">Diseño Flexible</h3>
+          <p>Diseñado con múltiples configuraciones posibles.</p>
+        </div>
+        <div>
+          <UserCheck class="w-12 h-12 text-red-600 mx-auto" />
+          <h3 class="text-xl font-bold mt-4">Creadores Expertos</h3>
+          <p>Creado por profesionales con experiencia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compromiso Ecológico -->
+    <section class="relative py-16">
+      <img src="/background2.jpg" alt="Compromiso Ecológico" class="absolute inset-0 w-full h-full object-cover opacity-70">
+      <div class="relative z-10 max-w-5xl mx-auto text-center text-white space-y-6">
+        <h2 class="text-5xl font-bold">Compromiso Ecológico</h2>
+        <p>En P1 Speedway nos comprometemos con la ecología y el reciclaje.</p>
+        <p>Hemos implementado 131 toneladas de asfalto reciclado en nuestra pista.</p>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-16 bg-black text-center">
+      <div class="max-w-7xl mx-auto">
+        <h3 class="text-xl font-bold">Nuestros Socios</h3>
+        <div class="flex justify-center space-x-8 mt-4">
+          <img src="/Epson-Logo.png" alt="Epson Logo" class="w-32">
+          <img src="/ACEK.png" alt="ACEK Logo" class="w-32">
+        </div>
+        <div class="mt-8">
+          <p>&copy; 2024 P1 Speedway. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
 	
 
 
